@@ -85,7 +85,7 @@ flowchart LR
 | 7 | **D6**/TX | **D6**/TX | LED |
 | 8 | **D7**/RX | **D7**/RX | SELECTボタン |
 | 9 | D8/**SCK** | D8/**SCK** | LEDドライバ（SCLK） |
-| 10 | D9/MISO | D9/MISO | ESCAPEボタン |
+| 10 | **D9**/MISO | D9/MISO | ESCAPEボタン |
 | 11 | D10/**MOSI** | D10/**MOSI** | LEDドライバ（DIN） |
 | 12 | **3V3** | **3V3** |
 | 13 | **GND** | **GND** |
