@@ -1,7 +1,6 @@
 #include "Speaker.hpp"
 #include <Arduino.h>
 
-
 Speaker::Speaker(int speakerPin, int speakerEnablePin, int ledControlChannel) :
     SpeakerPin_{ speakerPin },
     SpeakerEnablePin_{ speakerEnablePin },
