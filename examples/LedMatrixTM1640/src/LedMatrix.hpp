@@ -27,7 +27,7 @@ public:
     }
 
 public:
-    LedMatrix(TM1640& ledDriver);
+    explicit LedMatrix(TM1640& ledDriver);
     void begin();
     int GetPixel(int x, int y) const;
     void SetPixel(int x, int y, int color);
