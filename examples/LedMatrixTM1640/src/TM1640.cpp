@@ -41,7 +41,17 @@ void TM1640::End()
 
 TM1640::TM1640(int dinPin, int sclkPin) :
     DinPin_{ dinPin },
-    SclkPin_{ sclkPin }
+    SclkPin_{ sclkPin },
+    GridMap_{ nullptr },
+    SegMap_{ nullptr }
+{
+}
+
+TM1640::TM1640(int dinPin, int sclkPin, const uint8_t gridMap[16], const uint8_t segMap[8]) :
+    DinPin_{ dinPin },
+    SclkPin_{ sclkPin },
+    GridMap_{ gridMap },
+    SegMap_{ segMap }
 {
 }
 
@@ -71,12 +81,25 @@ void TM1640::SetBrightness(int brightness)
     End();
 }
 
-void TM1640::SetGrid(uint8_t grid, uint8_t dots)
+void TM1640::SetGrid(uint8_t grid, uint8_t segs)
 {
     if (grid >= 16) return;
 
+    if (GridMap_ != nullptr)
+    {
+        grid = GridMap_[grid];
+        if (grid >= 16) return;
+    }
+
+    if (SegMap_ != nullptr)
+    {
+        uint8_t actualSegs = 0;
+        for (int i = 0; i < 8; ++i) if (segs & 1 << i) actualSegs |= 1 << SegMap_[i];
+        segs = actualSegs;
+    }
+
     Start();
     Write(0b11000000 | grid);   // Address command setting : Display address = grid
-    Write(dots);                // Data
+    Write(segs);                // Data
     End();
 }
