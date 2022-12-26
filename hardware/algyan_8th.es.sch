@@ -9538,8 +9538,8 @@ part number 2062-2P from STA</description>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="U5" library="matsujirushi" deviceset="NJM2113" device="D"/>
 <part name="U6" library="matsujirushi" deviceset="UGSM23A" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="100K"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="100K"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
@@ -9554,16 +9554,16 @@ part number 2062-2P from STA</description>
 <part name="VR1" library="pot-suntan" deviceset="3386-" device="K"/>
 <part name="VR2" library="pot-suntan" deviceset="3386-" device="T"/>
 <part name="U$5" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="DNP"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="0"/>
 <part name="U$6" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$7" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="0.01u"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="0.01u"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="0"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="0"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="DNP"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="DNP"/>
 <part name="U$8" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$9" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603"/>
@@ -9576,7 +9576,7 @@ part number 2062-2P from STA</description>
 <part name="U$14" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$15" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_NO" device="_SILK" value=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="CN1" library="Seeed-Connector" deviceset="GROVE-CONNECTOR-DIP(4P-2.0)" device="" value="4P-2.0"/>
 <part name="U$16" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805"/>
