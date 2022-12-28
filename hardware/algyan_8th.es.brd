@@ -2894,11 +2894,11 @@ design rules under a new name.</description>
 <attribute name="OC_AKIZUKI" value="P-12226" x="121.92" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="127.635" y="24.13" size="1.016" layer="25" font="vector" ratio="10" align="bottom-right"/>
 </element>
-<element name="VR1" library="pot-suntan" package="3386K" value="" x="58.42" y="17.78" smashed="yes">
+<element name="VR1" library="pot-suntan" package="3386K" value="10K" x="58.42" y="17.78" smashed="yes">
 <attribute name="NAME" x="53.975" y="22.86" size="1.016" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="65.0875" y="14.2875" size="1.27" layer="27" ratio="12" rot="R90"/>
 </element>
-<element name="VR2" library="pot-suntan" package="3386T" value="" x="58.42" y="17.78" smashed="yes">
+<element name="VR2" library="pot-suntan" package="3386T" value="10K" x="58.42" y="17.78" smashed="yes">
 <attribute name="NAME" x="57.785" y="22.86" size="1.016" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="65.0875" y="13.335" size="1.27" layer="27" ratio="12" rot="R90"/>
 </element>

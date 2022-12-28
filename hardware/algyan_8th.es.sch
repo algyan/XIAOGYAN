@@ -9551,8 +9551,8 @@ part number 2062-2P from STA</description>
 <part name="U$2" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="U$4" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="VR1" library="pot-suntan" deviceset="3386-" device="K"/>
-<part name="VR2" library="pot-suntan" deviceset="3386-" device="T"/>
+<part name="VR1" library="pot-suntan" deviceset="3386-" device="K" value="10K"/>
+<part name="VR2" library="pot-suntan" deviceset="3386-" device="T" value="10K"/>
 <part name="U$5" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="DNP"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="0"/>
