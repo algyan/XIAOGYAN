@@ -8,6 +8,7 @@
 // Includes
 
 #include <Arduino.h>
+#include <ArduinoEigen.h>
 #include "TM1640.hpp"
 #include "LedMatrix.hpp"
 #include "LedMatrixAGFX.hpp"
@@ -15,10 +16,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Constants
 
+#define LED_MATRIX_PART_OSL641501   (0)
+#define LED_MATRIX_PART_LTP12188M   (1)
+#define LED_MATRIX_PART             (LED_MATRIX_PART_LTP12188M)
+
 static constexpr uint8_t TM1640_DIN_PIN = D10;
 static constexpr uint8_t TM1640_SCLK_PIN = D8;
 
-#if 0   // OSL641501
+#if LED_MATRIX_PART == LED_MATRIX_PART_OSL641501
 
 static const uint8_t TM1640_GRID_MAP[] =
 {
@@ -52,9 +57,7 @@ static const uint8_t TM1640_ROW_MAP[] =
     3,
 };
 
-#endif  // OSL641501
-
-#if 1   // LTP-12188M
+#elif LED_MATRIX_PART == LED_MATRIX_PART_LTP12188M
 
 static const uint8_t TM1640_GRID_MAP[] =
 {
@@ -88,7 +91,11 @@ static const uint8_t TM1640_ROW_MAP[] =
     3,
 };
 
-#endif  // LTP-12188M
+#else
+
+#error Invalid LED_MATRIX_PART.
+
+#endif
 
 ////////////////////////////////////////////////////////////////////////////////
 // Variables
@@ -108,7 +115,11 @@ void setup()
     Serial.println();
 
     TM1640_.begin();
+#if LED_MATRIX_PART == LED_MATRIX_PART_OSL641501
     LedMatrix_.begin();
+#elif LED_MATRIX_PART == LED_MATRIX_PART_LTP12188M
+    LedMatrix_.begin(true, LedMatrix::ScreenRotation::Degree90);
+#endif
     TM1640_.SetBrightness(2);
 
     LedMatrixAGFX_.fillScreen(1);
