@@ -18,7 +18,6 @@
 
 #define LED_MATRIX_PART_OSL641501   (0)
 #define LED_MATRIX_PART_LTP12188M   (1)
-#define LED_MATRIX_PART             (LED_MATRIX_PART_LTP12188M)
 
 static constexpr uint8_t TM1640_DIN_PIN = D10;
 static constexpr uint8_t TM1640_SCLK_PIN = D8;
@@ -141,6 +140,7 @@ void loop()
             LedMatrixAGFX_.drawPixel(x, y, 0);
             delay(50);
         }
+#if LED_MATRIX_PART == LED_MATRIX_PART_LTP12188M
         for (int x = 0; x < LedMatrixAGFX_.width(); ++x)
         {
             LedMatrixAGFX_.drawPixel(x, y, 2);
@@ -161,6 +161,7 @@ void loop()
             LedMatrixAGFX_.drawPixel(x, y, 0);
             delay(50);
         }
+#endif
     }
 }
 
