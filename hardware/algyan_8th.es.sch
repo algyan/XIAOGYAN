@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9535,7 +9535,7 @@ part number 2062-2P from STA</description>
 <part name="U8" library="matsujirushi" deviceset="TVGP01-G73BB" device=""/>
 <part name="U9" library="matsujirushi" deviceset="TVGP01-G73BB" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="U5" library="matsujirushi" deviceset="NJM2113" device="D"/>
 <part name="U6" library="matsujirushi" deviceset="UGSM23A" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="100K"/>
@@ -9569,8 +9569,8 @@ part number 2062-2P from STA</description>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="U$10" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$11" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="U$12" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$13" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$14" library="Power or GND " deviceset="GND_POWER" device=""/>
@@ -9579,7 +9579,7 @@ part number 2062-2P from STA</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="CN1" library="Seeed-Connector" deviceset="GROVE-CONNECTOR-DIP(4P-2.0)" device="" value="4P-2.0"/>
 <part name="U$16" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
@@ -9592,6 +9592,8 @@ part number 2062-2P from STA</description>
 <text x="198.12" y="45.72" size="1.778" layer="97" align="center-left">SDA</text>
 <text x="198.12" y="43.18" size="1.778" layer="97" align="center-left">VCC</text>
 <text x="198.12" y="40.64" size="1.778" layer="97" align="center-left">GND</text>
+<text x="274.32" y="198.12" size="1.778" layer="97">D9はBOOTボタンに接続されている（アクティブLOW）</text>
+<text x="274.32" y="200.66" size="1.778" layer="97">D6はリセット直後HIGH出力</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
