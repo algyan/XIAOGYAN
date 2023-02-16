@@ -1,6 +1,6 @@
 /*
  * main.cpp
- * Copyright (C) 2022 Takashi Matsuoka <matsujirushi@live.jp>
+ * Copyright (C) 2023 MATSUOKA Takashi <matsujirushi@live.jp>
  * MIT License
  */
 
@@ -12,8 +12,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Constants
 
-static constexpr uint8_t SELECT_BUTTON_PIN = D7;
-static constexpr uint8_t ESCAPE_BUTTON_PIN = D9;
+static constexpr uint8_t BUTTON_A_PIN = D9;
+static constexpr uint8_t BUTTON_B_PIN = D7;
 static constexpr uint8_t LED_PIN = D6;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -26,18 +26,18 @@ void setup()
     Serial.println();
     Serial.println();
 
-    pinMode(SELECT_BUTTON_PIN, INPUT_PULLUP);
-    pinMode(ESCAPE_BUTTON_PIN, INPUT);
+    pinMode(BUTTON_A_PIN, INPUT_PULLUP);
+    pinMode(BUTTON_B_PIN, INPUT_PULLUP);
     pinMode(LED_PIN, OUTPUT);
 }
 
 void loop()
 {
-    Serial.print(digitalRead(SELECT_BUTTON_PIN) == LOW ? '*' : '.');
-    Serial.print(digitalRead(ESCAPE_BUTTON_PIN) == LOW ? '*' : '.');
+    Serial.print(digitalRead(BUTTON_A_PIN) == LOW ? '*' : '.');
+    Serial.print(digitalRead(BUTTON_B_PIN) == LOW ? '*' : '.');
     Serial.println();
 
-    digitalWrite(LED_PIN, digitalRead(SELECT_BUTTON_PIN) == LOW || digitalRead(ESCAPE_BUTTON_PIN) == LOW ? LOW : HIGH);
+    digitalWrite(LED_PIN, digitalRead(BUTTON_A_PIN) == LOW || digitalRead(BUTTON_B_PIN) == LOW ? LOW : HIGH);
 
     delay(200);
 }

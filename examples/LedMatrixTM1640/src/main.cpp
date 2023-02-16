@@ -1,6 +1,6 @@
 /*
  * main.cpp
- * Copyright (C) 2022 Takashi Matsuoka <matsujirushi@live.jp>
+ * Copyright (C) 2023 MATSUOKA Takashi <matsujirushi@live.jp>
  * MIT License
  */
 
@@ -117,7 +117,7 @@ void setup()
 #if LED_MATRIX_PART == LED_MATRIX_PART_OSL641501
     LedMatrix_.begin();
 #elif LED_MATRIX_PART == LED_MATRIX_PART_LTP12188M
-    LedMatrix_.begin(true, LedMatrix::ScreenRotation::Degree90);
+    LedMatrix_.begin(true, LedMatrix::ScreenRotation::Degree270);
 #endif
     TM1640_.SetBrightness(2);
 
