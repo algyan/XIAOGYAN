@@ -1,0 +1,12 @@
+{
+    "name": "algyan8th",
+    "version": "0.1.0",
+    "license": "MIT",
+    "dependencies":
+    {
+        "Adafruit-GFX-Library": "https://github.com/adafruit/Adafruit-GFX-Library#1.11.5",
+        "Adafruit_BusIO": "https://github.com/adafruit/Adafruit_BusIO#1.14.1",
+        "ArduinoEigen": "https://github.com/hideakitai/ArduinoEigen#0.2.3"
+    }
+  }
+  

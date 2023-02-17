@@ -1,5 +1,12 @@
+/*
+ * LedMatrix.hpp
+ * Copyright (C) 2023 MATSUOKA Takashi
+ * MIT License
+ */
+
 #pragma once
 
+#include <cstdbool>
 #include <cstdint>
 #include <ArduinoEigen.h>
 
@@ -22,26 +29,31 @@ private:
     static constexpr int COLOR_BITS = 2;
 
 private:
-    TM1640& LedDriver_;
-    Eigen::Matrix<int, 3, 3> ScreenAffineTransformation_;
-    uint8_t Buffer_[COLOR_BITS][HEIGHT];
+    TM1640& ledDriver_;
+    Eigen::Matrix<int, 3, 3> screenAffineTransformation_;
+    uint8_t buffer_[COLOR_BITS][HEIGHT];
 
 public:
-    int Width() const
+    int width() const
     {
         return WIDTH;
     }
 
-    int Height() const
+    int height() const
     {
         return HEIGHT;
+    }
+
+    TM1640& getLedDriver() const
+    {
+        return ledDriver_;
     }
 
 public:
     explicit LedMatrix(TM1640& ledDriver);
     void begin();
     void begin(bool flip, ScreenRotation screenRotation);
-    int GetPixel(int x, int y) const;
-    void SetPixel(int x, int y, int color);
+    int getPixel(int x, int y) const;
+    void setPixel(int x, int y, int color);
 
 };
