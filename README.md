@@ -1,6 +1,6 @@
-# algyan_8th
+# XIAOGYAN
 
-IoT ALGYAN 8周年 オリジナルIoTデバイスのリポジトリです。
+IoT ALGYAN 8周年 オリジナルIoTデバイス「XIAOGYAN」のリポジトリです。
 
 ご質問、ご意見は、GitHub Discussionsへ。お気軽にどうぞ。
 

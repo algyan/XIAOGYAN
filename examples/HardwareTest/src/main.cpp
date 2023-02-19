@@ -9,7 +9,7 @@
 
 #include <Arduino.h>
 #include <elapsedMillis.h>
-#include "Algyan8th.hpp"
+#include "Xiaogyan.hpp"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Variables
@@ -29,9 +29,9 @@ void setup()
     ////////////////////////////////////////
     // Initialize
 
-    Algyan8th.begin();
+    Xiaogyan.begin();
 
-    Algyan8th.encoder.setRotatedHandler([](bool cw){
+    Xiaogyan.encoder.setRotatedHandler([](bool cw){
         const int value = EncoderValue_ + (cw ? -1 : 1);
         EncoderValue_ = constrain(value, 0, 19);
         Serial.println(EncoderValue_);
@@ -40,36 +40,36 @@ void setup()
     ////////////////////////////////////////
     // Startup Sequence
 
-    Algyan8th.speaker.setTone(262); // C4
-    Algyan8th.ledMatrix.setBrightness(2);
-    Algyan8th.ledMatrix.fillScreen(1);
+    Xiaogyan.speaker.setTone(262);  // C4
+    Xiaogyan.ledMatrix.setBrightness(2);
+    Xiaogyan.ledMatrix.fillScreen(1);
     delay(200);
 
-    Algyan8th.speaker.setTone(0);
-    Algyan8th.ledMatrix.fillScreen(0);
+    Xiaogyan.speaker.setTone(0);
+    Xiaogyan.ledMatrix.fillScreen(0);
 }
 
 void loop()
 {
-    // Algyan8th
-    Algyan8th.doWork();
+    // Xiaogyan
+    Xiaogyan.doWork();
 
     // LED
-    Algyan8th.led.write(millis() % 1000 < 200 ? LOW : HIGH);
+    Xiaogyan.led.write(millis() % 1000 < 200 ? LOW : HIGH);
 
     // Buttons
     static bool buttonA = false;
     static bool buttonB = false;
     bool preButtonA = buttonA;
     bool preButtonB = buttonB;
-    buttonA = Algyan8th.buttonA.read() == LOW;
-    buttonB = Algyan8th.buttonB.read() == LOW;
+    buttonA = Xiaogyan.buttonA.read() == LOW;
+    buttonB = Xiaogyan.buttonB.read() == LOW;
     if (preButtonA != buttonA || preButtonB != buttonB)
     {
-        if      ( buttonA && !buttonB) Algyan8th.speaker.setTone(262);  // C4
-        else if (!buttonA &&  buttonB) Algyan8th.speaker.setTone(294);  // D4
-        else if ( buttonA &&  buttonB) Algyan8th.speaker.setTone(330);  // E4
-        else                           Algyan8th.speaker.setTone(0);
+        if      ( buttonA && !buttonB) Xiaogyan.speaker.setTone(262);   // C4
+        else if (!buttonA &&  buttonB) Xiaogyan.speaker.setTone(294);   // D4
+        else if ( buttonA &&  buttonB) Xiaogyan.speaker.setTone(330);   // E4
+        else                           Xiaogyan.speaker.setTone(0);
     }
 
     // Led Matrix
@@ -83,15 +83,15 @@ void loop()
     {
         ledMatrixElapsed = 0;
 
-        Algyan8th.ledMatrix.drawPixel(x, y, COLOR_MAP[colorIndex]);
+        Xiaogyan.ledMatrix.drawPixel(x, y, COLOR_MAP[colorIndex]);
 
-        if (++x >= Algyan8th.ledMatrix.width())
+        if (++x >= Xiaogyan.ledMatrix.width())
         {
             x = 0;
             if (++colorIndex >= std::extent<decltype(COLOR_MAP)>::value)
             {
                 colorIndex = 0;
-                if (++y >= Algyan8th.ledMatrix.height())
+                if (++y >= Xiaogyan.ledMatrix.height())
                 {
                     y = 0;
                 }

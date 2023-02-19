@@ -1,5 +1,5 @@
 /*
- * Algyan8th.hpp
+ * Xiaogyan.hpp
  * Copyright (C) 2023 MATSUOKA Takashi
  * MIT License
  */
@@ -16,7 +16,7 @@
 #include "Speaker.hpp"
 #include "Encoder.hpp"
 
-class Algyan8thClass
+class XiaogyanClass
 {
 private:
     static constexpr uint8_t TM1640_DIN_PIN     = D10;
@@ -52,4 +52,4 @@ public:
 
 };
 
-extern Algyan8thClass Algyan8th;
+extern XiaogyanClass Xiaogyan;
