@@ -4,6 +4,9 @@ IoT ALGYAN 8周年 オリジナルIoTデバイス「XIAOGYAN」のリポジト�
 
 ご質問、ご意見は、GitHub Discussionsへ。お気軽にどうぞ。
 
+* [サンプルコード](https://github.com/algyan/xiaogyan_examples)
+* [Arduino用ライブラリ](https://github.com/algyan/xiaogyan_arduino)
+
 ## タイムライン
 
 1. (-12/E)どんなデバイスを作るか考える
