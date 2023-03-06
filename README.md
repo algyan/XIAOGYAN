@@ -56,6 +56,28 @@ flowchart LR
 * LEDは、マイコン動作状態の表示
 * ボタンは、確定とキャンセルの操作
 
+## ハードウェア
+
+### ES基板
+
+* [回路図](hardware/algyan_8th.es.pdf)
+
+<img src="media/algyan_8th.es.jpg" width="200">
+
+### ES2基板
+
+* [部品リスト](hardware/algyan_8th.es2.xlsx)
+* [回路図](hardware/algyan_8th.es2.pdf)
+
+<img src="media/algyan_8th.es2.jpg" width="200">
+
+### ES3基板
+
+* [部品リスト](hardware/algyan_8th.es3.xlsx)
+* [回路図](hardware/algyan_8th.es3.pdf)
+
+<img src="media/algyan_8th.es3.jpg" width="200">
+
 ### マイコンI/Oマップ（ES3基板）
 
 | ピン番号 | XIAO ESP32C3 | XIAO BLE | 接続部品 |
@@ -75,16 +97,7 @@ flowchart LR
 | 13 | **GND** | **GND** |
 | 14 | **5V** | **5V** |
 
-### ES基板
+## ソフトウェア
 
-* [回路図](hardware/algyan_8th.es.pdf)
-
-### ES2基板
-
-* [部品リスト](hardware/algyan_8th.es2.xlsx)
-* [回路図](hardware/algyan_8th.es2.pdf)
-
-### ES3基板
-
-* [部品リスト](hardware/algyan_8th.es3.xlsx)
-* [回路図](hardware/algyan_8th.es3.pdf)
+* [サンプルコード](https://github.com/algyan/xiaogyan_examples)
+* [Arduino用ライブラリ](https://github.com/algyan/xiaogyan_arduino)
