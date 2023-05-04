@@ -8702,8 +8702,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U11" library="pot-suntan" deviceset="3386-" device="K" value="10K"/>
 <part name="U12" library="pot-suntan" deviceset="3386-" device="T" value="10K"/>
 <part name="U$5" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="DNP"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="0"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="1000p"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="U$6" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$7" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
