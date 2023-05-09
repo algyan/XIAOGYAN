@@ -30,11 +30,11 @@ flowchart LR
 
 ## マニュアル
 
-* しおり（手引書）
-* 部品手配マニュアル
-* 組立マニュアル
-* 動作確認マニュアル
-* ソフト開発マニュアル
+* [しおり（手引書）](manuals/guidebook/README.md)
+* [部品手配マニュアル](manuals/order/README.md)
+* 組立マニュアル - [PR](https://github.com/algyan/XIAOGYAN/pull/48)
+* [動作確認マニュアル](manuals/test/README.md)
+* [ソフト開発マニュアル](manuals/software/README.md)
 
 ## リファレンス
 
