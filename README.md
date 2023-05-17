@@ -40,6 +40,10 @@ flowchart LR
 
 * [XIAOGYANやってみたよ！！ユーザー投稿](https://github.com/algyan/XIAOGYAN/discussions/50)
 
+* [XIAOGYANbitLess](https://github.com/610t/XIAOGYANbitLess)
+
+    XIAOGYANをScratchで使うためのプログラム
+
 ## リファレンス
 
 * ハードウェア
