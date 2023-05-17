@@ -22,8 +22,7 @@ XIAOGYANプロジェクトに参加して、ぜひ一緒に楽しみましょう
 
 XIAOGYANプロジェクトで用意したデバイスがこちらです。
 
-<img src="media/2.png" height="150">
-<img src="media/1.png" height="150">
+<img src="media/2.png" height="200"> <img src="media/1.png" height="200">
 
 心臓部となるマイコンに[Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started)を採用しました。
 このマイコンはWi-FiやBluetooth LEでクラウドやスマートフォンと通信することができます。アンテナが外付けなのでやり場に困るのですが、基板に結束バンドで固定できるようにしました。
