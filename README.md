@@ -36,6 +36,10 @@ flowchart LR
 * [動作確認マニュアル](manuals/test/README.md)
 * [ソフト開発マニュアル](manuals/software/README.md)
 
+## 事例
+
+* [XIAOGYANやってみたよ！！ユーザー投稿](https://github.com/algyan/XIAOGYAN/discussions/50)
+
 ## リファレンス
 
 * ハードウェア
