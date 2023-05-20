@@ -39,10 +39,8 @@ flowchart LR
 ## 事例
 
 * [XIAOGYANやってみたよ！！ユーザー投稿](https://github.com/algyan/XIAOGYAN/discussions/50)
-
-* [XIAOGYANbitLess](https://github.com/610t/XIAOGYANbitLess)
-
-    XIAOGYANをScratchで使うためのプログラム
+* [XIAOGYANbitLess （XIAOGYANをScratchで使うためのプログラム）](https://github.com/610t/XIAOGYANbitLess)
+* [XIAO-ESP32-C3 で AtomVM を動作させたときのメモ](https://gist.github.com/pojiro/ccb9d88dedd0590a8ac6930b37633ee0)
 
 ## リファレンス
 
