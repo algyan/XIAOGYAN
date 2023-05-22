@@ -32,7 +32,7 @@ flowchart LR
 
 * [しおり（手引書）](manuals/guidebook/README.md)
 * [部品手配マニュアル](manuals/order/README.md)
-* 組立マニュアル - [PR](https://github.com/algyan/XIAOGYAN/pull/48)
+* [組立マニュアル](manuals/assembly/README.md)
 * [動作確認マニュアル](manuals/test/README.md)
 * [ソフト開発マニュアル](manuals/software/README.md)
 
