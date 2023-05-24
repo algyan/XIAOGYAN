@@ -71,7 +71,7 @@ I2Cの制御信号は，基板左のユニバーサル基板の区画にも伸�
 
 [![ichiken_handa](http://img.youtube.com/vi/dQ7AUjb1tkA/0.jpg)](https://www.youtube.com/watch?v=dQ7AUjb1tkA)
 
-Youtberのイチケンさんの[はんだ付け動画](https://www.youtube.com/watch?v=dQ7AUjb1tkA)が分かりやすいです．
+YouTuberのイチケンさんの[はんだ付け動画](https://www.youtube.com/watch?v=dQ7AUjb1tkA)が分かりやすいです．
 はんだ付けの経験が無い/浅い方は，一度ご覧の上で以降の作業に進むことをオススメします．表面実装の経験が無い方もぜひ！
 
 ### 2.2. 基板の確認
