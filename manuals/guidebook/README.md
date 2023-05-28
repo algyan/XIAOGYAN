@@ -9,6 +9,10 @@
 
 そこで、オリジナルIoTデバイス**XIAOGYAN**をALGYANコミュニティで先導（扇動？）することにしました。
 
+<img src="media/3.png" width="300">
+
+[「XIAOGYAN」への思い（動画）](https://www.youtube.com/watch?v=LFgrQTpkMbk&t=739s)
+
 * デバイス、ファームウェア、クラウドの全てをオープン、カスタマイズ可能に
 * 入手しやすい部品
 * 部品代は3000円以内
