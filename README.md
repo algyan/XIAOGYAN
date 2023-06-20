@@ -32,6 +32,7 @@ flowchart LR
 
 * [しおり（手引書）](manuals/guidebook/README.md)
 * [部品手配マニュアル](manuals/order/README.md)
+* [機材マニュアル](manuals/equipment/README.md)
 * [組立マニュアル](manuals/assembly/README.md)
 * [動作確認マニュアル](manuals/test/README.md)
 * [ソフトウェア開発マニュアル](manuals/software/README.md)
