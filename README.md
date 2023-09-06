@@ -48,7 +48,8 @@ flowchart LR
 * ハードウェア
   * [部品リスト](hardware/xiaogyan.v1.xlsx)
   * [部品貼付台紙](hardware/xiaogyan_pasteboard.v1.pdf)
-  * [回路図](hardware/xiaogyan.v1.pdf)
+  * [回路図(v1)](hardware/xiaogyan.v1.pdf)
+  * [回路図(v1.1)](hardware/xiaogyan.v1.1.pdf)
 
 * ソフトウェア
   * [サンプルコード](https://github.com/algyan/xiaogyan_examples)
