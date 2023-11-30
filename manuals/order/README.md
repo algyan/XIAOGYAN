@@ -16,9 +16,15 @@ XIAOGYANの完成品を入手する方法はありません。ご自身で部品
 
 ## XIAOGYAN基板を入手
 
-XIAOGYAN基板は非売品です。IoT ALGYANコミュニティの特定イベントで配布しています。イベントに参加して入手してください。
+matsujirushiのBOOTHから購入できます。
 
-* [IoT ALGYANコミュニティのイベント](https://algyan.connpass.com/event/)
+* [XIAOGYAN基板（10KΩ抵抗付き）](https://matsujirushi.booth.pm/items/5108023)
+
+> 以前はイベントでXIAOGYAN基板を配布していましたが、[2023/9/2のイベント](https://algyan.connpass.com/event/292100/)を最後に配布は無くなりました。（Seeed株式会社から提供いただいた分が全て配布されました。）
+
+~~XIAOGYAN基板は非売品です。IoT ALGYANコミュニティの特定イベントで配布しています。イベントに参加して入手してください。~~
+
+* ~~[IoT ALGYANコミュニティのイベント](https://algyan.connpass.com/event/)~~
 
 ## 秋月電子通商から購入
 
